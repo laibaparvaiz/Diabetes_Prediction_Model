@@ -147,9 +147,5 @@ iface = gr.Interface(
 #launch the app for railway
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 7860)) 
-    server_name = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
-    
-    if os.environ.get("PORT"):
-        server_name = "0.0.0.0"
-
+    server_name = "0.0.0.0" if os.environ.get("PORT") else "127.0.0.1"
     iface.launch(server_name=server_name, server_port=port) 
