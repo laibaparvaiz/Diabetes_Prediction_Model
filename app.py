@@ -8,6 +8,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LogisticRegression
 from sklearn.impute import SimpleImputer 
 import gradio as gr 
+import os
 #from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 #training model and setup
